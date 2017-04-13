@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<style>
+	table, th, td{
+		border:1px solid black;
+	}
+
+	table.center {
+		width:80%; 
+		margin-left:10%; 
+		margin-right:10%;
+	}
+	
+	th, td{
+		padding: 10px;
+	}
+	
+	img{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	</style>
+
+	<body>
+
+		<h1 style="text-align:center">This is my home page</h1>
+		<hr>
+		<%= image_tag 'smiley.jpg'%>
+		<hr>
+	   
+	   <p style="text-align:center">Let's go to the <%= link_to 'ABOUT', about_path %> page!</p>
+	   
+		<table class="center">
+			<tr>
+				<td>I need to speed up my shit</td>
+				<td>I siriusly need to</td>
+			</tr>
+			<tr>
+				<td>Fuckin' ruby</td>
+				<td>With it's rails and shit</td>
+		</table>
+
+	</body>
+	
+</html>
